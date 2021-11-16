@@ -1,0 +1,35 @@
+                              PSEUDOCODE OF ASSIGNMENT 1
+DECLARE Str1,str2 As String
+        DECLARE pangram As Boolean
+          DECLARE thischar, char1 As Char
+   DECLARE x,chrplace As Integer
+        
+        Str1 <--''
+        str2 <--'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        pangram = True
+        thischar <-- ''
+        x <-- 0
+        char1 <--''
+        chrplace <-- 0
+
+        OUTPUT('Enter a string: ')
+        INPUT Str1 
+        Str1 <-- UCase(Str1)
+        For x <-- 1 To LENGHT(str2)
+            thischar <-- Mid(str2, x, 1)
+            chrplace <-- LOCATE(Str1, thischar)
+
+            If chrplace <-- 0 
+                   Then
+                pangram <-- False
+                Exit For
+            End If
+        Next
+
+       If pangram = True
+               Then
+           OUTPUT("The Entered string contain all the alphabets")
+        Else
+           OUTPUT("Entered string does not contain all alphabets")
+        End If
+ 
