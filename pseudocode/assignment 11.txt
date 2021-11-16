@@ -1,0 +1,49 @@
+
+                                       PSEUDOCODE OF ASSIGNMENT 11
+        Declare notStr, badStr, str1, str2 As String
+        Declare count, notPos, badPos As Integer
+        Declare char1 As Char
+
+        notStr <-- 'not'
+        badStr <-- 'bad'
+        str1 <-- ''
+        str2 <--''
+        count <-- 0
+        char1 <--''
+        badPos <--0
+        notPos <-- 0
+
+       output('Enter the string: ')
+        input str1 
+        str1 <-- LCase(str1)
+
+        notPos <-- InStr(str1, notStr)
+        If notPos <-- 0 
+                  Then
+      OUTPUT('String does not contain the word 'not' ')
+            End
+        End If
+
+        badPos <-- InStr(str1, badStr)
+        If badPos <-- 0 Then
+            OUTPUT('String does not contain the word 'bad' ')
+      
+            End
+        End If
+
+        If notPos < badPos
+                    Then
+            For count <-- 1 To Len(str1)
+                char1 <-- Mid(str1, count, 1)
+
+                If count <-- notPos 
+                            Then
+                    str2 <-- str2 + 'good'
+                    count <-- badPos + 3
+                Else
+                    str2 <-- str2 + char1
+                End If
+            Next
+        End If
+
+    OUTPUT('The processed string is: ',str2)

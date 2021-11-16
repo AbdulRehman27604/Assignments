@@ -1,0 +1,12 @@
+                        PESUDOCODE OF ASSIGNMENT 6
+DECLARE donuts As Integer
+        donuts <-- 0
+       OUTPUT('Numbers of donuts')
+        INPUT donuts 
+        If donuts <= 5 
+            Then
+            OUTPUT("less")
+        ElseIf donuts >= 10 
+            Then
+            OUTPUT('many')
+        End If

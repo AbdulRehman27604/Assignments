@@ -1,0 +1,28 @@
+                                         PSEUDOCODE OF ASSIGNMENT 8
+        DECLARE str1, str2 As String
+        DECLARE dischar, fchar, char2 As Char
+        DECLARE c1 As Integer
+
+        str1 <-- ''
+        str2 <-- ''
+        dischar <-- ''
+        fchar <-- ''
+        c1 <-- 0
+        char2 <-- '*'
+
+        OUTPUT('Enter the string: ')
+        INPUT str1 
+        str1 <-- UCase(str1)
+        fchar <-- Left(str1, 1)
+        str2 <-- fchar
+
+        For count1 <-- 1 To Len(str1)
+            dischar <-- Mid(str1, count1 + 1, 1)
+            If dischar = fchar
+                 Then
+                str2 <-- str2 + char2
+            Else : str2 = str2 + dischar
+            End If
+        Next
+
+      OUTPUT('The manupilated string is: ',LCase(str2))

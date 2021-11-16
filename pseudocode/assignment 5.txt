@@ -1,0 +1,32 @@
+ DECLARE STR1 As String
+        DECLARE X, power, power2, power3, power4, power5, counter As Integer
+        DECLARE char1 As Char
+        STR1 <--''
+       OUTPUT("ENTER A STRING TO PROCESS")
+      INPUT Ucase(STR1) 
+        For X = 1 To Len(STR1)
+            char1 <-- Mid(STR1, X, 1)
+            If char1 <-- "A" 
+                  Then
+                power <-- power + 1
+            ElseIf char1 <-- "E" 
+                  Then
+                power2 <-- power2 + 1
+            ElseIf char1 <-- "O"
+                  Then
+                power3 <-- power3 + 1
+            ElseIf char1 <-- "I"
+                  Then
+                power4 <-- power4 + 1
+            ElseIf char1 <-- "U" 
+                  Then
+                power5 <-- power5 + 1
+            End If
+        Next
+        OUTPUT('VOWEL 'A' is',power)
+        OUTPUT('VOWEL 'E' is',power2)
+        OUTPUT('VOWEL 'I' is',power4)
+        OUTPUT('VOWEL 'O' is', power3)
+        OUTPUT('VOWEL 'U' is', power5)
+        counter <-- power + power2 + power3 + power4 + power5
+        OUTPUT('TOTAL VOWELS ARE :',counter)

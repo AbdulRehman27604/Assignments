@@ -1,0 +1,39 @@
+                                PSEUDOCODE OF ASSIGNMENT 9
+      DECLARE str1, str2, str3, str4 As String
+        DECLARE c1, c2 As Integer
+         DECLARE chr1, chr2, thischr1, thischr2 As Char
+
+        str1 <-- ''
+        str2 <-- ''
+        str3 <-- ''
+        str4 <--''
+        c1 <-- 0
+        c2 <-- 0
+        chr1 <-- ''
+        chr2 <--''
+        thischr1 <--''
+        thischr2 <--''
+
+        OUTPUT('Enter the first word: ')
+           INPUT str1 
+       OUTPUT('Enter the second word: ')
+            INPUT str2 
+
+        chr1 <-- Left(str1, 1)
+        chr2 <-- Left(str2, 1)
+
+        str3 =<-- chr2
+          str4 <-- chr1
+        For c1 <--2 To Len(str2)
+              thischr1 <-- Mid(str2, c1, 1)
+            str4 <-- str4 + thischr1
+
+        Next
+
+        For c2 <-- 2 To Len(str1)
+                 thischr2 <-- Mid(str1, c2, 1)
+            str3 <-- str3 + thischr2
+
+        Next
+
+     OUTPUT'The processed string is: ',str3, ' ',str4

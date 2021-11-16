@@ -1,0 +1,25 @@
+                        PSEUDOCODE OF ASSIGNMENT 7
+        DECLARE x As Integer
+        DECLARE char1, char2, char3, char4 As Char
+        x <--0
+        char1 <--''
+        char2 <--''
+        char3 <--''
+        char4 <--''
+        word <-- ""
+        OUTPUT('ENTER A WORD TO PROCESS')
+        INPUT word 
+        For x <-- 1 To Len(word)
+            char1 <-- Mid(word, 1)
+            char2 <-- Mid(word, 2)
+            Exit For
+        Next
+
+        For x <-- 1 To Len(word)
+            char3 <-- Right(word, 1)
+            char4 <-- Right(word, 2)
+            Exit For
+        Next
+
+        letter <-- (char1) & (char2) & (char4) & (char3)
+        OUTPUT letter

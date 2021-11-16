@@ -1,0 +1,33 @@
+                                     Pseudocode of assignment 2
+Declare str1,str2 AS string
+Declare thischar,char1,char2 As char
+Declare count As integer
+str1<--''
+str2<--''
+thischar<--''
+char1<--''
+char2<--''
+count<--0
+output("ENTER STRING:")
+INPUT str1
+OUTPUT('ENTER CHARACTER TO FIND')
+INPUT char1 
+       OUTPUT("ENTER CHARACTER TO REPLACE:")
+        INPUT char2 
+        For count = 1 To Len(str1)
+            thischar = Mid(str1, count, 1)
+            If thischar = char1 Then
+                str2 = str2 & char2
+            Else : str2 = str2 & thischar
+            End If
+
+
+        Next
+        OUTPUT('PROCESSED STRING',str2)
+
+       
+
+  
+
+End Module
+
